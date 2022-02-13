@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220213180241">
+	<title>Главная</title>
+</head>
+	<body>
+		<main class="main">
+			<section class="cost">
+				<div class="cost__container container">
+					<h1 class="cost__title h1">Стоимость обучения</h1>
+					<div class="cost__main-block">
+						<div class="cost__prices">
+							<div class="cost__label discount-label">
+								<span class="discount-label__title">скидка</span>
+								<span class="discount-label__discount">40%</span>
+								<span class="discount-label__action">первым 20</span>
+							</div>
+							<div class="cost__prices-content prices">
+								<div class="prices__total">
+									<span class="prices__total-title">Полная стоимость курса</span>
+									<span class="prices__total-cost rub">50 000</span>
+								</div>
+								<div class="prices__credit">
+									<span class="prices__credit-cost rub">2 900</span>
+									<span class="prices__credit-title">Рассрочка без первого взноса</span>
+								</div>
+								<div class="prices__promotion">
+									<span class="prices__promotion-cost rub">29 000</span>
+									<span class="prices__promotion-title">Для первых 20-ти</span>
+								</div>
+							</div>
+						</div>
+						<div class="cost__content">
+							<h2 class="cost__content-title h2">Запишитесь на&nbsp;курс</h2>
+							<ul class="cost__content-list u-list">
+								<li class="u-list__item">Телефон</li>
+								<li class="u-list__item">Телефон</li>
+								<li class="u-list__item">Телефон</li>
+								<li class="u-list__item">Телефон</li>
+							</ul>
+							<div class="cost__content-info info-course">
+								<div class="info-course__item">Старт курса: <strong
+										class="info-course__item-strong"> 7&nbsp;сентября</strong></div>
+								<div class="info-course__item">Осталось: <strong
+										class="info-course__item-strong"> 19&nbsp;мест</strong></div>
+							</div>
+							<form class="cost__content-form form" action="#">
+								<div class="form__inputs">
+									<input class="form__input input" type="text" placeholder="Имя"
+										required>
+									<input class="form__input input" type="tel" placeholder="Телефон"
+										pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})"
+										required>
+									<input class="form__input input" type="email" placeholder="Email"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+										required>
+								</div>
+								<div class="form__btns">
+									<input class="form__submit btn" type="submit" value="Записаться">
+									<label class="form__agreement checkbox">
+										<input class="checkbox__input visually-hidden" type="checkbox"
+											checked required>
+										<span class="checkbox__text">
+											Я согласен с условиями обработки
+											<a class="checkbox__text-link" href="#" target="_blank">персональных
+												данных</a>
+										</span>
+									</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/app.min.js?_v=20220213180241"></script>
+	</body>
+</html>
