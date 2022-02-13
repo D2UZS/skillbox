@@ -1,0 +1,22 @@
+@import "../../node_modules/normalize.css/normalize";
+
+// ===== Шрифты =====
+@import "fonts";
+
+// ===== Общие стили =====
+@import "mixins";
+@import "variables";
+@import "null";
+@import "base";
+@import "typography";
+
+// ===== Блоки =====
+@import "./blocks/discount-label";
+@import "./blocks/prices";
+@import "./blocks/form";
+@import "./blocks/rub";
+@import "./blocks/info-course";
+@import "./blocks/btn";
+
+// ===== Секции =====
+@import "./sections/cost";

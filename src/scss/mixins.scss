@@ -1,0 +1,23 @@
+// *** Установка параметров шрифта ***
+@mixin font($font-size: 16px, $line-height: 24px, $font-weight: null) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+
+@mixin _991 {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+@mixin _767 {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin _media-hover {
+    @media (hover: hover) {
+        @content;
+    }
+}

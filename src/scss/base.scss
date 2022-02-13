@@ -1,0 +1,42 @@
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	color: var(--secondary-color);
+	font-family: roboto, Arial, Helvetica, sans-serif;
+	@include font(14px, 1.2, 400);
+
+	background-color: var(--background-color);
+
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+
+	// Улучшаем рендеринг шрифтов на маках
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	width: 100%;
+	max-width: calc(1170px + (var(--safe-padding) * 2));
+	margin: 0 auto;
+
+	padding: 0 var(--safe-padding);
+}
+
+.visually-hidden {
+	position: absolute !important;
+	visibility: hidden !important;
+	pointer-events: none !important;
+	clip: rect(0 0 0 0) !important;
+	clip-path: inset(100%) !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	padding: 0 !important;
+	border: 0 !important;
+	text-indent: -9999px !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	user-select: none !important;
+}

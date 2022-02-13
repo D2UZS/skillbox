@@ -1,0 +1,134 @@
+.cost {
+	padding: 70px 0 90px;
+
+	&__title {
+		margin-bottom: 67px;
+
+		width: 100%;
+		text-align: center;
+	}
+
+	&__main-block {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		background-color: var(--background-second-color);
+		box-shadow: 0px 2px 24px rgba(168, 175, 196, 0.3);
+	}
+
+	&__prices {
+		position: relative;
+
+		display: grid;
+		place-items: center;
+
+		background-color: var(--accent-color);
+	}
+
+	&__label {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -20px);
+		z-index: 2;
+	}
+
+	&__content {
+		padding: 57px 76px 57px 85px;
+	}
+
+	&__content-title {
+		margin-bottom: 24px;
+	}
+
+	&__content-list {
+		margin-bottom: 44px;
+	}
+
+	&__content-info,
+	&__content-form {
+		width: 100%;
+		max-width: 370px;
+	}
+
+	&__content-info {
+		margin-bottom: 28px;
+	}
+
+	@include _991 {
+		padding: 50px 0 80px;
+
+		&__title {
+			margin-bottom: 76px;
+		}
+
+		&__main-block {
+			grid-template-columns: 1fr;
+		}
+
+		&__prices {
+			min-height: 540px;
+			padding: 133px var(--safe-padding) 73px;
+		}
+
+		&__content {
+			padding: 69px 122px 78px 122px;
+		}
+
+		&__content-title {
+			margin-bottom: 32px;
+
+			text-align: center;
+		}
+
+		&__content-list {
+			margin-bottom: 52px;
+		}
+
+		&__content-info,
+		&__content-form {
+			max-width: unset;
+		}
+	}
+
+	@include _767 {
+		padding: 56px 0 0;
+
+		&__title {
+			margin-bottom: 81px;
+		}
+
+		&__main-block {
+			margin: 0 var(--safe-padding--);
+
+			box-shadow: none;
+		}
+
+		&__prices {
+			min-height: 400px;
+			padding: 89px var(--safe-padding) 41px;
+		}
+
+		&__label {
+			transform: translate(-50%, -53px);
+		}
+
+		&__content {
+			padding: 40px var(--safe-padding) 55px;
+		}
+
+		&__content-title {
+			margin-bottom: 20px;
+
+			text-align: left;
+		}
+
+		&__content-list {
+			margin-bottom: 29px;
+		}
+
+		&__content-info {
+			margin-bottom: 30px;
+		}
+	}
+}

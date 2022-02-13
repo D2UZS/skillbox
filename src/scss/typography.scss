@@ -1,0 +1,75 @@
+.h1,
+.h2 {
+	margin: 0;
+	color: var(--main-contrast-color);
+}
+
+.h1 {
+	@include font(55px, 32px, 700);
+	letter-spacing: -0.5px;
+	color: var(--main-contrast-color);
+
+	@include _991 {
+		@include font(45px, 53px);
+	}
+
+	@include _767 {
+		@include font(38px, 44px);
+	}
+}
+
+.h2 {
+	@include font(34px, 40px, 700);
+	letter-spacing: -0.5px;
+	color: var(--main-contrast-color);
+
+	@include _991 {
+		@include font(38px, 40px);
+	}
+
+	@include _767 {
+		@include font(30px, 36px);
+	}
+}
+
+.u-list {
+	&__item {
+		position: relative;
+
+		padding-left: 22px;
+		margin-bottom: 12px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		font-family: openSans,
+		Arial,
+		Helvetica,
+		sans-serif;
+		@include font(15px, 28px);
+		letter-spacing: -0.5px;
+
+		list-style: none;
+
+		&::before {
+			content: '';
+
+			position: absolute;
+			top: 12px;
+			left: 0;
+
+			width: 6px;
+			height: 6px;
+
+			background-color: var(--accent-color);
+			border-radius: 50%;
+		}
+	}
+
+	@include _991 {
+		&__item {
+			line-height: 26px;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.discount-label {
+	padding: 21px 19px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	color: var(--main-color);
+	text-align: center;
+
+
+	background-image: url(../img/bg-discount-label.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+
+	&__title {
+		margin-bottom: 7px;
+
+		@include font(14px, 16px, 700);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	&__discount {
+		margin-bottom: 3px;
+
+		@include font(30px, 28px, 700);
+		letter-spacing: -0.75px;
+	}
+
+	&__action {
+		@include font(15px, 24px);
+		letter-spacing: -0.5px;
+		mix-blend-mode: normal;
+		opacity: 0.7;
+	}
+}

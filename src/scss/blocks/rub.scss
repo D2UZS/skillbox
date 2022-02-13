@@ -1,0 +1,14 @@
+.rub {
+	display: flex;
+
+	&::after {
+		content: '';
+
+		flex-shrink: 0;
+
+		background-image: url(../img/rub.svg);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}

@@ -1,0 +1,195 @@
+.prices {
+	color: var(--main-color);
+	text-align: center;
+
+	&__total,
+	&__credit,
+	&__promotion {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__total-cost,
+	&__credit-cost,
+	&__promotion-cost {
+		font-family: robotoSlab, Arial, Helvetica, sans-serif;
+		letter-spacing: -2px;
+
+		display: flex;
+	}
+
+	&__total-title,
+	&__credit-title,
+	&__promotion-title {
+		letter-spacing: -0.5px;
+	}
+
+	&__total {
+		margin-bottom: 5px;
+
+		&-title {
+			margin-bottom: 4px;
+
+			@include font(15px, 18px);
+
+			opacity: 0.5;
+		}
+
+		&-cost {
+			position: relative;
+
+			@include font(38px, 50px, 300);
+
+			opacity: 0.4;
+
+			&::before {
+				content: '';
+
+				position: absolute;
+				top: 50%;
+				left: 0;
+
+				width: 100%;
+				height: 2px;
+
+				background-color: var(--main-color);
+			}
+
+			&::after {
+				margin-left: 10px;
+
+				width: 19px;
+			}
+		}
+	}
+
+	&__credit {
+		margin-bottom: 32px;
+
+		&-cost {
+			margin-bottom: -11px;
+
+			@include font(80px, 106px);
+
+			&::after {
+				width: 50px;
+				background-image: url(../img/rub-b.svg) !important;
+			}
+		}
+
+		&-title {
+			@include font(23px, 27px, 700);
+		}
+	}
+
+	&__promotion {
+
+		&-cost {
+			margin-bottom: 3px;
+
+			@include font(50px, 66px, 300);
+
+			&::after {
+				margin-left: 8px;
+				width: 24px;
+			}
+		}
+
+		&-title {
+			@include font(20px, 23px);
+		}
+	}
+
+	@include _991 {
+		&__total {
+			margin-bottom: 21px;
+
+			&-title {
+				margin-bottom: 4px;
+
+				opacity: 0.4;
+			}
+		}
+
+		&__credit {
+			margin-bottom: 34px;
+
+			&-cost {
+				margin-bottom: -11px;
+
+				@include font(80px, 106px);
+			}
+
+			&-title {
+				@include font(20px, 23px);
+			}
+		}
+
+		&__promotion {
+
+			&-cost {
+				margin-bottom: -1px;
+			}
+
+			&-title {
+				@include font(18px, 21px);
+			}
+		}
+	}
+
+	@include _767 {
+
+		&__total {
+			margin-bottom: 11px;
+
+			&-title {
+				margin-bottom: 5px;
+			}
+
+			&-cost {
+				@include font(36px, 47px);
+
+				&::after {
+					width: 17px;
+				}
+			}
+		}
+
+		&__credit {
+			margin-bottom: 24px;
+
+			&-cost {
+				margin-bottom: -3px;
+
+				@include font(56px, 74px);
+
+				&::after {
+					margin-left: 6px;
+					width: 36px;
+				}
+			}
+
+			&-title {
+				@include font(18px, 21px);
+			}
+		}
+
+		&__promotion {
+
+			&-cost {
+				margin-bottom: 0;
+
+				@include font(40px, 53px);
+
+				&::after {
+					width: 20px;
+				}
+			}
+
+			&-title {
+				@include font(15px, 18px);
+			}
+		}
+	}
+}

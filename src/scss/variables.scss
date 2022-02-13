@@ -1,0 +1,29 @@
+:root {
+	// цвета
+	--main-color: #fff;
+	--main-contrast-color: #000;
+	--accent-color: #3D3BFF;
+	--secondary-color: #657195;
+	--background-color: #F6F7FD;
+	--background-second-color: #FAFBFE;
+	--border-color: #E6E8F0;
+
+	// Нажатие на кнопку
+	--opacity-press: 0.7;
+
+	// Транзишены
+	--transition-1: all 0.1s ease-in;
+	--transition-2: all 0.2s ease-in;
+
+	// Паддинг по краям
+	--safe-padding: 15px;
+	--safe-padding--: calc(-1 * var(--safe-padding));
+
+	@include _991 {
+		--safe-padding: 30px;
+	}
+
+	@include _767 {
+		--safe-padding: 24px;
+	}
+}
